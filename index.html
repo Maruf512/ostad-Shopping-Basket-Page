@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Basket</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-light py-3 border-bottom">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="logo font-playfair">World Peas</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <button class="btn btn-success">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-cart-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"
+                />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                />
+              </svg>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="row">
+        <!-- Basket Items -->
+        <div class="col-md-8">
+          <h2 class="font-playfair mb-4">Shopping Basket</h2>
+          <!-- item 1 -->
+          <div
+            class="basket-item d-flex justify-content-between align-items-center border-bottom mb-2"
+          >
+            <img
+              src="https://placehold.co/600x400"
+              alt="Product"
+              class="img-fluid"
+              style="max-width: 100px"
+            />
+            <div>
+              <p class="font-roboto mb-1">Heirloom tomato</p>
+              <p class="text-muted font-roboto small">Price per kg: $20</p>
+            </div>
+            <p class="font-roboto">$40</p>
+          </div>
+          <!-- item 2 -->
+          <div
+            class="basket-item d-flex justify-content-between align-items-center border-bottom mb-2"
+          >
+            <img
+              src="https://placehold.co/600x400"
+              alt="Product"
+              class="img-fluid"
+              style="max-width: 100px"
+            />
+            <div>
+              <p class="font-roboto mb-1">Product Name</p>
+              <p class="text-muted font-roboto small">Price per kg: $20</p>
+            </div>
+            <p class="font-roboto">$40</p>
+          </div>
+          <!-- item 3 -->
+          <div
+            class="basket-item d-flex justify-content-between align-items-center border-bottom mb-4"
+          >
+            <img
+              src="https://placehold.co/600x400"
+              alt="Product"
+              class="img-fluid"
+              style="max-width: 100px"
+            />
+            <div>
+              <p class="font-roboto mb-1">Product Name</p>
+              <p class="text-muted font-roboto small">Price per kg: $20</p>
+            </div>
+            <p class="font-roboto">$40</p>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-md-4">
+          <div class="border p-4 order-summary">
+            <h3 class="font-playfair mb-3">Order Summary</h3>
+            <div class="d-flex justify-content-between">
+              <p class="font-roboto">Subtotal</p>
+              <p class="font-roboto">$200</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="font-roboto">Shipping</p>
+              <p class="font-roboto">$50</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="font-roboto">Tax</p>
+              <p class="font-roboto">$5</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <h4 class="font-playfair">Total</h4>
+              <h4 class="font-playfair">$255</h4>
+            </div>
+            <button class="btn btn-success btn-block mt-3">
+              Continue to Payment
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

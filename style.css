@@ -1,0 +1,67 @@
+:root {
+  --accent-color: rgba(240, 238, 232, 0.473);
+  --forground-color: black;
+  --hover-color: #157347;
+}
+
+/* Fonts */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header Styling */
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--forground-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--hover-color);
+}
+
+/* shoping list */
+.basket-item {
+  border-radius: 16px;
+  background-color: var(--accent-color);
+  padding-right: 2rem;
+}
+
+/* Basket Items */
+.basket-item img {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.basket-item p {
+  margin: 0;
+}
+
+/* Order Summary */
+.order-summary {
+  border-radius: 16px;
+  background-color: var(--accent-color);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3,
+h4 {
+  font-weight: bold;
+}
+
+button {
+  font-weight: 500;
+}
